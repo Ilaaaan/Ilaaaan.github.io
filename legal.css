@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/*NAVBAR*/
+nav{
+    background-color: black;
+    border-bottom: 1px solid #317AC1;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 2;  
+    
+    
+}
+
+nav .logo .Logo {
+    height: auto;
+    max-width: 153px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+nav .liens{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+nav .liens ul{
+    list-style: none;
+    display: flex;
+}
+nav .liens ul li{
+    color: white;  
+    margin-right: 20px; 
+    font-size: 25px;
+    text-decoration: none;
+}
+nav .liens ul a{
+    text-decoration: none;
+    color: white;
+}
+nav .liens li:hover{
+    text-decoration: underline #317AC1;
+
+}
+/*NAVBAR*/
+/*Mentions*/
+.mention{
+    padding-left: 50px ;
+    padding-right: 50px ;
+}
+.mention p{
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.mention .titre{
+    font-size: 21px;
+    text-decoration: underline #317AC1;
+}
+.mention .clntotal{
+    display: flex;
+    justify-content: center;
+    
+}
+.mention .cln1{
+    margin-right: 50px;
+}
+.mention .cln2{
+    margin-left: 50px;
+}
+/*Mentions*/
+/*PIED DE PAGE*/
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color:#828282;
+  }
+  footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .lienfooter:hover{
+    text-decoration: underline #317AC1;
+  }
+/*PIED DE PAGE*/
+
+@media screen and (max-width: 640px){
+    nav{
+        height: 85px;
+    }
+    nav .logo .Logo{
+        height: auto;
+        width: 80px;
+    }
+    nav .liens ul li{
+        font-size: 17px;
+    }
+    .mention{padding-left: 0; padding-right: 0;}
+    .mention .cln1{margin-right: 0;}
+    .mention .cln2{margin-left: 0;}
+}

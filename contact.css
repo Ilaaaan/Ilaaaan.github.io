@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*NAVBAR*/
+nav{
+    background-color: black;
+    border-bottom: 1px solid #317AC1;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 2;  
+    
+    
+}
+
+nav .logo .Logo {
+    height: auto;
+    max-width: 153px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+nav .liens{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+nav .liens ul{
+    list-style: none;
+    display: flex;
+}
+nav .liens ul li{
+    color: white;  
+    margin-right: 20px; 
+    font-size: 25px;
+    text-decoration: none;
+}
+nav .liens ul a{
+    text-decoration: none;
+    color: white;
+}
+nav .liens li:hover{
+    text-decoration: underline #317AC1;
+
+}
+/*fin-NAVBAR*/
+
+/*Contact*/
+.contenucontact{
+    margin-top: 60px;
+}
+/*Nous contacter par téléphone*/
+.telephone{
+    display: flex;  
+    flex: start;
+    
+}
+.telephone .txttelephone{
+    padding-top: 100px;
+}
+.telephone p{
+    font-size: 40px;
+    margin-left: 90px;
+}
+.telephone .numero{
+text-decoration: underline #317AC1;
+}
+/*fin-Nous contacter par téléphone*/
+
+/*Nous contacter par courrier*/
+.mailcourrier{
+    display: flex;
+    justify-content: space-between;
+}
+.mailcourrier .detailmailcourrier{margin-top: 10px; margin-left: 70px;}
+
+.mailcourrier .detailmailcourrier .mail .txttitre{font-size: 40px;}
+.mailcourrier .detailmailcourrier .courrier .txttitre{font-size: 40px;}
+
+.mailcourrier .detailmailcourrier .mail .txtadressemail{font-size: 30px;}
+.mailcourrier .detailmailcourrier .courrier .txtadresseville{font-size: 30px;}
+/*fin-Nous contacter par courrier*/
+/*fin-Contact*/
+
+
+/*PIED DE PAGE*/
+footer{
+    margin-top: 70px;
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color:#828282;
+  }
+  footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .lienfooter:hover{
+    text-decoration: underline #317AC1;
+  }
+/*fin-PIED DE PAGE*/
+
+@media screen and (max-width: 640px){
+    nav{
+        height: 85px;
+    }
+    nav .logo .Logo{
+        height: auto;
+        width: 80px;
+    }
+    nav .liens ul li{
+        font-size: 17px;
+    }
+    .byebye{
+        display: none;
+    }
+    .telephone .txttelephone{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .mailcourrier .courrier{
+        margin-top: 70px;
+    }
+    .mailcourrier .detailmailcourrier{
+        margin-left: 5px;
+    }
+    .telephone p{margin-left: 5px;}
+}

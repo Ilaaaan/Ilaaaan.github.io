@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*NAVBAR*/
+nav{
+    background-color: black;
+    border-bottom: 1px solid #317AC1;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 2;  
+    
+    
+}
+
+nav .logo .Logo {
+    height: auto;
+    max-width: 153px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+nav .liens{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+nav .liens ul{
+    list-style: none;
+    display: flex;
+}
+nav .liens ul li{
+    color: white;  
+    margin-right: 20px; 
+    font-size: 25px;
+    text-decoration: none;
+}
+nav .liens ul a{
+    text-decoration: none;
+    color: white;
+}
+nav .liens li:hover{
+    text-decoration: underline #317AC1;
+
+}
+/*NAVBAR*/
+
+/*PIED DE PAGE*/
+footer{
+    margin-top:99px;
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color:#828282;
+  }
+  footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .lienfooter:hover{
+    text-decoration: underline #317AC1;
+  }
+/*PIED DE PAGE*/
+
+/*Contenu*/
+.lignes1 .bloc1 img{border: black  solid 1px; margin-right: 50px;margin-top: 50px;}
+.lignes1{justify-content: space-evenly;}
+.lignes1 .bloc1{text-align : center;}
+.lignes1 .bloc2 img{border: black  solid 1px; margin-right: 50px;margin-top: 50px;}
+.lignes1 .bloc2{text-align : center;}
+/*Contenu*/
+
+@media screen and (max-width: 640px){
+    nav{
+        height: 85px;
+    }
+    nav .logo .Logo{
+        height: auto;
+        width: 80px;
+    }
+    nav .liens ul li{
+        font-size: 17px;
+    }
+   
+}

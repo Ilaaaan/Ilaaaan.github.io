@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*NAVBAR*/
+nav{
+    background-color: black;
+    border-bottom: 1px solid #317AC1;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 2;  
+    
+    
+}
+
+nav .logo .Logo {
+    height: auto;
+    max-width: 153px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+nav .liens{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+nav .liens ul{
+    list-style: none;
+    display: flex;
+}
+nav .liens ul li{
+    color: white;  
+    margin-right: 20px; 
+    font-size: 25px;
+    text-decoration: none;
+}
+nav .liens ul a{
+    text-decoration: none;
+    color: white;
+}
+nav .liens li:hover{
+    text-decoration: underline #317AC1;
+
+}
+/*NAVBAR*/
+/*PRESTATIONS*/
+.box{margin-left: 100px ; margin-top: 50px; display: inline-block;}
+.box .top{ margin: 0; padding: 0;border: grey solid 1px;}
+.box .bottom{ top: -7px; 
+    position: relative;  
+    width: 496px;
+    padding: 0;
+    margin: 0;
+    padding: 2px;
+    border:#828282 solid 1px ; 
+    border-top: none; 
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*PRESTATION*/
+/*PIED DE PAGE*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color:#828282;
+  }
+  footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .lienfooter:hover{
+    text-decoration: underline #317AC1;
+  }
+/*PIED DE PAGE*/
+
+@media screen and (max-width: 640px){
+    nav{
+        height: 85px;
+    }
+    nav .logo .Logo{
+        height: auto;
+        width: 80px;
+    }
+    nav .liens ul li{
+        font-size: 17px;
+    }
+    .box{
+        margin-left: 10px;
+        
+    }
+    .top{
+        width: 350px;
+        height: 300px;
+    }
+    .box .bottom{
+        width: 346px;
+    }
+    footer{
+        position: relative;
+        width: auto;
+    }
+}
